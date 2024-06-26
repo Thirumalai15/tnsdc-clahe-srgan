@@ -260,7 +260,7 @@ def clahe_example_UI():
             ## Display the super resolution image
             with col2:
                 st.subheader("CLAHE Enhanced image")
-                st.image('clahe2.jpg', use_column_width=True)
+                st.image('clahe2.png', use_column_width=True)
 
 
 
