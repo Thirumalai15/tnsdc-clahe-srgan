@@ -64,7 +64,7 @@ def run_UI():
         clahe.clahe_example_UI()
 
     elif page == 'SRGAN':
-        st.title("Try Your Own Image ☠️")
+        st.title("SRGAN")
         new_image_enhancer.new_image_enhancer_UI(model)
 
     else:

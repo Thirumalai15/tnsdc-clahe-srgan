@@ -223,7 +223,7 @@ def clahe_example_UI():
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         noise_type = detect_noise(gray)
         st.write(f"Detected noise type: {noise_type}")
-        
+
         hist = [0] * 256
         for i in range(gray.shape[0]):
             for j in range(gray.shape[1]):
@@ -244,7 +244,7 @@ def clahe_example_UI():
                 equalized[i, j] = 255 * cdf_norm[gray[i, j]]
 
         clahe_img = clahe(equalized,2,0,0)
-        cv2.imwrite('clahe2.jpg',clahe_img)
+        cv2.imwrite('clahe2.png',clahe_img)
 
         results = st.empty()
 

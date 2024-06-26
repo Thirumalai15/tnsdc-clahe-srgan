@@ -17,9 +17,6 @@ def new_image_enhancer_UI(model):
     st.divider()
     st.subheader("Choose a Low Resolution X-Ray image ...")
 
-    ## Display the warning
-    st.caption("⚠️ Check Solution Risks in the Project Home Page")
-
     ## Image uploader
     image_upload = st.file_uploader("Upload A Low Resolution X-Ray Image (Png)", type="png")
 
